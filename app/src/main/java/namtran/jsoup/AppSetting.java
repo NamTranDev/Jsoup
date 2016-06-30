@@ -1258,4 +1258,359 @@ public class AppSetting {
         list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-cac-phuong-phap-giai-nhanh-tq198-page15.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
         return list;
     }
+
+    public static List<String> listURLDaiCuongVeKimLoai() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page11.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page12.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page13.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page14.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page15.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page16.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page17.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page18.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page19.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page20.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page21.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page22.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page23.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page24.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page25.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page26.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page27.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page28.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page29.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page30.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page31.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page32.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page33.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page34.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page35.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page36.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page37.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page38.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page39.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page40.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page41.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page42.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page43.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page44.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page45.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page46.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page47.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page48.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page49.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page50.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page51.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page52.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page53.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page54.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page55.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-dai-cuong-ve-kim-loai-tq20-page56.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLKimLoaiKiemKiemThoVaNhom() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page11.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page12.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page13.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page14.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page15.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page16.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page17.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page18.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page19.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page20.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page21.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page22.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page23.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page24.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page25.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page26.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page27.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page28.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page29.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page30.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page31.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page32.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page33.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page34.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-kim-loai-kiem-kiem-tho-va-nhom-tq21-page35.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLSatCromDong() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page11.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page12.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page13.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page14.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page15.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page16.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page17.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page18.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page19.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page20.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page21.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page22.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page23.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page24.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page25.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page26.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page27.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page28.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page29.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page30.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page31.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-sat-crom-dong-tq22-page32.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLNhanBietPhanBietTinhChe() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page11.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page12.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page13.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page14.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page15.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page16.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page17.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-nhan-biet-phan-biet-tinh-che-tach-tq38-page18.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLCauTaoNguyenTuBangTuanHoan() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page11.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page12.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-cau-tao-nguyen-tu-bang-tuan-hoan-tq43-page13.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLLienKetHoaHoc() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-lien-ket-hoa-hoc-tq195.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-lien-ket-hoa-hoc-tq195-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLPhanUngOxiHoaKhu() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phan-ung-oxi-hoa-khu-tq196.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phan-ung-oxi-hoa-khu-tq196-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phan-ung-oxi-hoa-khu-tq196-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phan-ung-oxi-hoa-khu-tq196-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phan-ung-oxi-hoa-khu-tq196-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phan-ung-oxi-hoa-khu-tq196-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phan-ung-oxi-hoa-khu-tq196-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phan-ung-oxi-hoa-khu-tq196-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phan-ung-oxi-hoa-khu-tq196-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phan-ung-oxi-hoa-khu-tq196-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLSuDienLy() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page11.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page12.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page13.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page14.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page15.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page16.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page17.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-su-dien-li-tq44-page18.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLTocDoPhanUngVaCanBangHoaHoc() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-toc-do-phan-ung-va-can-bang-hoa-hoc-tq42.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-toc-do-phan-ung-va-can-bang-hoa-hoc-tq42-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-toc-do-phan-ung-va-can-bang-hoa-hoc-tq42-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-toc-do-phan-ung-va-can-bang-hoa-hoc-tq42-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-toc-do-phan-ung-va-can-bang-hoa-hoc-tq42-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-toc-do-phan-ung-va-can-bang-hoa-hoc-tq42-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-toc-do-phan-ung-va-can-bang-hoa-hoc-tq42-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-toc-do-phan-ung-va-can-bang-hoa-hoc-tq42-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-toc-do-phan-ung-va-can-bang-hoa-hoc-tq42-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-toc-do-phan-ung-va-can-bang-hoa-hoc-tq42-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLPhiKim() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page11.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page12.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page13.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page14.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page15.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page16.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page17.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page18.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page19.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-phi-kim-tq41-page20.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLAxitBazoVaMuoi() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page11.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page12.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page13.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page14.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page15.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page16.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page17.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page18.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page19.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page20.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page21.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page22.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page23.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page24.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page25.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page26.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-axit-bazo-va-muoi-tq37-page27.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLTongHopHoaHuuCo() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page11.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page12.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page13.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page14.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page15.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-tong-hop-hoa-hoc-huu-co-tq197-page16.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
+
+    public static List<String> listURLLyThuyetTongHop() {
+        List<String> list = new ArrayList<>();
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45.html");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page2.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page3.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page4.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page5.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page6.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page7.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page8.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page9.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page10.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page11.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page12.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page13.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page14.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page15.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page16.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page17.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page18.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page19.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page20.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page21.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page22.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page23.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page24.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page25.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page26.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page27.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page28.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page29.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page30.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page31.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page32.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        list.add("http://tuyensinh247.com/luyen-chuyen-de-ly-thuyet-tong-hop-tq45-page33.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=10");
+        return list;
+    }
 }

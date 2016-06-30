@@ -69,7 +69,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //List<String> listURL = AppSetting.listURLAminAminoAxitProtein();
     //List<String> listURL = AppSetting.listURLPolimeVaVatLieuPolime();
     //List<String> listURL = AppSetting.listURLDaiCuongVeHoaHuuCoVaHydrocarbon();
-    List<String> listURL = AppSetting.listURLTongHopCacPhuongPhapGiaiNhanh();
+    //List<String> listURL = AppSetting.listURLTongHopCacPhuongPhapGiaiNhanh();
+    //List<String> listURL = AppSetting.listURLDaiCuongVeKimLoai();
+    //List<String> listURL = AppSetting.listURLKimLoaiKiemKiemThoVaNhom();
+    //List<String> listURL = AppSetting.listURLSatCromDong();
+    //List<String> listURL = AppSetting.listURLNhanBietPhanBietTinhChe();
+    //List<String> listURL = AppSetting.listURLCauTaoNguyenTuBangTuanHoan();
+    //List<String> listURL = AppSetting.listURLLienKetHoaHoc();
+    //List<String> listURL = AppSetting.listURLPhanUngOxiHoaKhu();
+    //List<String> listURL = AppSetting.listURLSuDienLy();
+    //List<String> listURL = AppSetting.listURLTocDoPhanUngVaCanBangHoaHoc();
+    //List<String> listURL = AppSetting.listURLPhiKim();
+    //List<String> listURL = AppSetting.listURLAxitBazoVaMuoi();
+    //List<String> listURL = AppSetting.listURLTongHopHoaHuuCo();
+    List<String> listURL = AppSetting.listURLLyThuyetTongHop();
     List<CauHoi> listCauHoi;
     int b = 0;
 
@@ -96,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }else if (v.getId() == R.id.btnexel){
             txtmeta.setText("please wait");
-            xuatFileExel("MonHoaPhanTongHopCacPhuongPhapGiaiNhanh");
+            xuatFileExel("MonHoaPhanLyThuyetTongHop");
         }
     }
 
