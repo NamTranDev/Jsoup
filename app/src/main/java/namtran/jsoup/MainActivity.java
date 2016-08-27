@@ -82,7 +82,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //List<String> listURL = AppSetting.listURLPhiKim();
     //List<String> listURL = AppSetting.listURLAxitBazoVaMuoi();
     //List<String> listURL = AppSetting.listURLTongHopHoaHuuCo();
-    List<String> listURL = AppSetting.listURLLyThuyetTongHop();
+    //List<String> listURL = AppSetting.listURLLyThuyetTongHop();
+    //List<String> listURL = AppSetting.listURLVietBacToHuu();
+    //List<String> listURL = AppSetting.listURLTayTienQuangDung();
+    //List<String> listURL = AppSetting.listURLHamSoVaCacBaiToanLienQuan();
+    List<String> listURL = AppSetting.listURLHinhHocKhongGian();
     List<CauHoi> listCauHoi;
     int b = 0;
 
@@ -109,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }else if (v.getId() == R.id.btnexel){
             txtmeta.setText("please wait");
-            xuatFileExel("MonHoaPhanLyThuyetTongHop");
+            xuatFileExel("MonToanHinhHocKhongGian");
         }
     }
 
@@ -227,7 +231,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             for (Element element : result){
                 CauHoi cauHoi = new CauHoi();
+
                 Document document = Jsoup.parse(element.html());
+                //have answer
 
                 String[] a = element.html().split("<input type=\"radio\" value=\"1\"");
 
@@ -271,12 +277,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 }
                 if (cauHoi.getCauHoi() != null){
-                    if (cauHoi.getDapAnA() != null && cauHoi.getDapAnB() != null && cauHoi.getDapAnC() != null && cauHoi.getDapAnD() != null){
+
+                    /*if (cauHoi.getDapAnA() != null && cauHoi.getDapAnB() != null && cauHoi.getDapAnC() != null && cauHoi.getDapAnD() != null){
                         if (!cauHoi.getDapAnA().contains("<img src=") && !cauHoi.getDapAnB().contains("<img src=") && !cauHoi.getDapAnC().contains("<img src=") && !cauHoi.getDapAnD().contains("<img src=")) {
                             listCauHoi.add(cauHoi);
                         }
-                    }
-
+                    }*/
+                    listCauHoi.add(cauHoi);
                 }
             }
 
