@@ -97,9 +97,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //List<String> listURL = AppSetting.listURLToHopXacXuat();
     //List<String> listURL = AppSetting.listURLPhuongTrinhBatPhuongTrinhVaHePhuongTrinhDaiSo();
     //List<String> listURL = AppSetting.listURLBatDangThucGiaTriLonNhatVaNhoNhat();
-    List<String> listURL = AppSetting.listURLTuDongNghiaTuTraiNghia();
+    //List<String> listURL = AppSetting.listURLTuDongNghiaTuTraiNghia();
+    List<String> listURL = AppSetting.listURLDangBaiTimLoiSai();
     List<CauHoi> listCauHoi;
-    List<CauHoiAnhVan> listCauHoiAnhVan;
+    static List<CauHoiAnhVan> listCauHoiAnhVan;
     int b = 0;
 
     @Override
@@ -119,11 +120,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.btnGetData){
-            txtmeta.setText("" + listCauHoi.size());
+            txtmeta.setText("" + listCauHoiAnhVan.size());
             for (int i =0; i<listURL.size();i++){
                 //mt = new MyTask();
                 //mt.execute(listURL.get(i));
-                getCauHoiAnhVan = new GetCauHoiAnhVan();
+                getCauHoiAnhVan = new GetCauHoiAnhVan(i);
                 getCauHoiAnhVan.execute(listURL.get(i));
             }
         }else if (v.getId() == R.id.btnexel){
@@ -397,6 +398,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     class GetCauHoiAnhVan extends AsyncTask<String, Void, String[]> {
         Document doc;
         String[] result;
+        int position;
+
+        public GetCauHoiAnhVan(int position) {
+            this.position = position;
+        }
+
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -407,7 +414,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             String url = params[0];
             try {
                 doc = Jsoup.connect(url).get();
-                result = doc.body().html().split("<div class=\"boder clearfix\">");
+                if (doc.body().html().contains("<div class=\"boder clearfix\">"))
+                    result = doc.body().html().split("<div class=\"boder clearfix\">");
+                else if (doc.body().html().contains("<div class=\"nobor clearfix\">"))
+                    result = doc.body().html().split("<div class=\"nobor clearfix\">");
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
@@ -421,12 +431,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             for (int i = 0; i < result.length ;i++){
                 if (i == 0)
                     continue;
-                String[] a = result[i].split("<p style=\"text-align: justify;\">");
-                String[] e = a[1].split("</p>\n" +
-                        "        <p></p> \n" +
-                        "        <div id=\"question");
-                String DangCauHoi = e[0];
-                new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
+                if (!result[i].contains("<p style=\"text-align: justify;\">")){
+                    String[] a = result[i].split("</p>\n" +
+                            "        <p></p> \n" +
+                            "        <div id=\"question");
+                    String[] e;
+                    if (a[0].contains("<p><strong>")){
+                        e = a[0].split("<p><strong>");
+                        String DangCauHoi = e[1];
+                        new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
+                    }else if (a[0].contains(":</strong></p>")){
+                        e = a[0].split(":</strong></p>");
+                        if (e[1].contains("\"><strong>")){
+                            String[] d = e[1].split("\"><strong>");
+                            String DangCauHoi = d[1];
+                            new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
+                        }else {
+                            String DangCauHoi = e[1];
+                            new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
+                        }
+
+                    }else {
+                        Log.d("Error","" + position + "\n" + i);
+                        Log.d("Error",a[0]);
+                    }
+                }else {
+                    String[] a = result[i].split("<p style=\"text-align: justify;\">");
+                    String[] e = a[1].split("</p>\n" +
+                            "        <p></p> \n" +
+                            "        <div id=\"question");
+                    String DangCauHoi = e[0];
+                    new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
+                }
+
             }
         }
     }
