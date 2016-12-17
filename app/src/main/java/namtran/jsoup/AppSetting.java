@@ -2205,4 +2205,6 @@ public class AppSetting {
         list.add("http://tuyensinh247.com/luyen-chuyen-de-dang-bai-tim-loi-sai-lop-12-tq64-page63.html?tab_id=0&type_id=0&q_yesno=0&q_theory=0&q_level=0&row_per_page=5");
         return list;
     }
+
+
 }

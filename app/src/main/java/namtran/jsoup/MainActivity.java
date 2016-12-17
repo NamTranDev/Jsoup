@@ -97,8 +97,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //List<String> listURL = AppSetting.listURLToHopXacXuat();
     //List<String> listURL = AppSetting.listURLPhuongTrinhBatPhuongTrinhVaHePhuongTrinhDaiSo();
     //List<String> listURL = AppSetting.listURLBatDangThucGiaTriLonNhatVaNhoNhat();
-    //List<String> listURL = AppSetting.listURLTuDongNghiaTuTraiNghia();
-    List<String> listURL = AppSetting.listURLDangBaiTimLoiSai();
+    List<String> listURL = AppSetting.listURLTuDongNghiaTuTraiNghia();
+    //List<String> listURL = AppSetting.listURLDangBaiTimLoiSai();
     List<CauHoi> listCauHoi;
     static List<CauHoiAnhVan> listCauHoiAnhVan;
     int b = 0;
@@ -242,15 +242,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //Excel sheet name. 0 represents first sheet
                 WritableSheet sheet = workbook.createSheet("ListCauHoi", 0);
                 int arraySize = listCauHoiAnhVan.size();
-                Label[][] headerArray = new Label[1][5];
-                Label[][] rowsArray = new Label[arraySize + 1][5];
+                Label[][] headerArray = new Label[1][7];
+                Label[][] rowsArray = new Label[arraySize + 1][7];
                 headerArray[0][0] = new Label(0, 0, "Cau Hoi");
-                headerArray[0][0] = new Label(1, 0, "Dang Cau Hoi");
-                headerArray[0][0] = new Label(2, 0, "Tieu De Cau Hoi");
-                headerArray[0][1] = new Label(3, 0, "Dap An A");
-                headerArray[0][2] = new Label(4, 0, "Dap An B");
-                headerArray[0][3] = new Label(5, 0, "Dap An C");
-                headerArray[0][4] = new Label(6, 0, "Dap An D");
+                headerArray[0][1] = new Label(1, 0, "Dang Cau Hoi");
+                headerArray[0][2] = new Label(2, 0, "Tieu De Cau Hoi");
+                headerArray[0][3] = new Label(3, 0, "Dap An A");
+                headerArray[0][4] = new Label(4, 0, "Dap An B");
+                headerArray[0][5] = new Label(5, 0, "Dap An C");
+                headerArray[0][6] = new Label(6, 0, "Dap An D");
                 CauHoiAnhVan cauHoi = new CauHoiAnhVan();
                 for (int i = 0; i < arraySize; i++){
                     if (i < arraySize) {
@@ -258,12 +258,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     int j = i + 1;
                     rowsArray[j][0] = new Label(0, j,cauHoi.getCauHoi());
-                    rowsArray[j][0] = new Label(1, j,cauHoi.getDangCauHoi());
-                    rowsArray[j][0] = new Label(2, j,cauHoi.getTieuDeCauHoi());
-                    rowsArray[j][1] = new Label(3, j,cauHoi.getDapAnA());
-                    rowsArray[j][2] = new Label(4, j,cauHoi.getDapAnB());
-                    rowsArray[j][3] = new Label(5, j,cauHoi.getDapAnC());
-                    rowsArray[j][4] = new Label(6, j,cauHoi.getDapAnD());
+                    rowsArray[j][1] = new Label(1, j,cauHoi.getDangCauHoi());
+                    rowsArray[j][2] = new Label(2, j,cauHoi.getTieuDeCauHoi());
+                    rowsArray[j][3] = new Label(3, j,cauHoi.getDapAnA());
+                    rowsArray[j][4] = new Label(4, j,cauHoi.getDapAnB());
+                    rowsArray[j][5] = new Label(5, j,cauHoi.getDapAnC());
+                    rowsArray[j][6] = new Label(6, j,cauHoi.getDapAnD());
                 }
 
                 // Add header cells
