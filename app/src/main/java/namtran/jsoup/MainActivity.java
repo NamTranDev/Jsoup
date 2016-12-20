@@ -97,8 +97,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //List<String> listURL = AppSetting.listURLToHopXacXuat();
     //List<String> listURL = AppSetting.listURLPhuongTrinhBatPhuongTrinhVaHePhuongTrinhDaiSo();
     //List<String> listURL = AppSetting.listURLBatDangThucGiaTriLonNhatVaNhoNhat();
-    List<String> listURL = AppSetting.listURLTuDongNghiaTuTraiNghia();
+    //List<String> listURL = AppSetting.listURLTuDongNghiaTuTraiNghia();
     //List<String> listURL = AppSetting.listURLDangBaiTimLoiSai();
+    List<String> listURL = AppSetting.listURLDangBaiDienTuVaoCau();
+    //List<String> listURL = AppSetting.listURLDangBaiNguAmTrongAmVaNguDongVi();
+    //List<String> listURL = AppSetting.listURLDangBaiLoaiCauLoaiMenhDe();
     List<CauHoi> listCauHoi;
     static List<CauHoiAnhVan> listCauHoiAnhVan;
     int b = 0;
@@ -129,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }else if (v.getId() == R.id.btnexel){
             txtmeta.setText("please wait");
-            xuatFileExelMonAnhVan("MonAnhVanTuDongNghiaTuTraiNghia");
+            xuatFileExelMonAnhVan("MonAnhVanDangBaiDienTuVaoCau");
         }
     }
 
@@ -428,42 +431,52 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         protected void onPostExecute(String[] result) {
             super.onPostExecute(result);
 
-            for (int i = 0; i < result.length ;i++){
-                if (i == 0)
-                    continue;
-                if (!result[i].contains("<p style=\"text-align: justify;\">")){
-                    String[] a = result[i].split("</p>\n" +
-                            "        <p></p> \n" +
-                            "        <div id=\"question");
-                    String[] e;
-                    if (a[0].contains("<p><strong>")){
-                        e = a[0].split("<p><strong>");
-                        String DangCauHoi = e[1];
-                        new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
-                    }else if (a[0].contains(":</strong></p>")){
-                        e = a[0].split(":</strong></p>");
-                        if (e[1].contains("\"><strong>")){
-                            String[] d = e[1].split("\"><strong>");
-                            String DangCauHoi = d[1];
-                            new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
-                        }else {
+            if (result != null && result.length > 0){
+                for (int i = 0; i < result.length ;i++){
+                    if (i == 0)
+                        continue;
+                    if (!result[i].contains("<p style=\"text-align: justify;\">")){
+                        String[] a = result[i].split("</p>\n" +
+                                "        <p></p> \n" +
+                                "        <div id=\"question");
+                        String[] e;
+                        if (a[0].contains("<p><strong>")){
+                            e = a[0].split("<p><strong>");
                             String DangCauHoi = e[1];
                             new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
+                        }else if (a[0].contains(":</strong></p>")){
+                            e = a[0].split(":</strong></p>");
+                            if (e[1].contains("\"><strong>")){
+                                String[] d = e[1].split("\"><strong>");
+                                String DangCauHoi = d[1];
+                                new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
+                            }else {
+                                String DangCauHoi = e[1];
+                                new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
+                            }
+
+                        }else {
+                            Log.d("Error","" + position + "\n" + i);
+                            Log.d("Error",a[0]);
                         }
-
                     }else {
-                        Log.d("Error","" + position + "\n" + i);
-                        Log.d("Error",a[0]);
+                        String[] a = result[i].split("<p style=\"text-align: justify;\">");
+                        if (a.length > 2){
+                            String[] e = a[2].split("</p>\n" +
+                                    "        <p></p> \n" +
+                                    "        <div id=\"question");
+                            String DangCauHoi = e[0];
+                            new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
+                        }else {
+                            String[] e = a[1].split("</p>\n" +
+                                    "        <p></p> \n" +
+                                    "        <div id=\"question");
+                            String DangCauHoi = e[0];
+                            new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
+                        }
                     }
-                }else {
-                    String[] a = result[i].split("<p style=\"text-align: justify;\">");
-                    String[] e = a[1].split("</p>\n" +
-                            "        <p></p> \n" +
-                            "        <div id=\"question");
-                    String DangCauHoi = e[0];
-                    new GetCauHoiAnhVan2(DangCauHoi,"").execute(result[i]);
-                }
 
+                }
             }
         }
     }
