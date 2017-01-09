@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by Nam Tran on 26-Apr-16.
  */
-public class AppSetting {
+public class LuyenThiURL {
 
     /**
      * Mon Sinh
