@@ -6,14 +6,36 @@ package namtran.jsoup;
 
 public class Toiec {
 
+    String englishtopic;
+    String vietnamTopic;
+    String imageTopic;
     String vocabulary;
-    String transliteration;
+    String transliterationUS;
+    String transliterationUK;
     String englishMean;
     String vietnamMean;
     String fromCategory;
     String englishExample;
     String vietnamExample;
-    String audio;
+    String audioUS;
+    String audioUK;
+    String img;
+
+    public String getEnglishtopic() {
+        return englishtopic;
+    }
+
+    public void setEnglishtopic(String englishtopic) {
+        this.englishtopic = englishtopic;
+    }
+
+    public String getVietnamTopic() {
+        return vietnamTopic;
+    }
+
+    public void setVietnamTopic(String vietnamTopic) {
+        this.vietnamTopic = vietnamTopic;
+    }
 
     public String getVocabulary() {
         return vocabulary;
@@ -23,12 +45,20 @@ public class Toiec {
         this.vocabulary = vocabulary;
     }
 
-    public String getTransliteration() {
-        return transliteration;
+    public String getTransliterationUS() {
+        return transliterationUS;
     }
 
-    public void setTransliteration(String transliteration) {
-        this.transliteration = transliteration;
+    public void setTransliterationUS(String transliterationUS) {
+        this.transliterationUS = transliterationUS;
+    }
+
+    public String getTransliterationUK() {
+        return transliterationUK;
+    }
+
+    public void setTransliterationUK(String transliterationUK) {
+        this.transliterationUK = transliterationUK;
     }
 
     public String getEnglishMean() {
@@ -71,11 +101,55 @@ public class Toiec {
         this.vietnamExample = vietnamExample;
     }
 
-    public String getAudio() {
-        return audio;
+    public String getAudioUS() {
+        return audioUS;
     }
 
-    public void setAudio(String audio) {
-        this.audio = audio;
+    public void setAudioUS(String audioUS) {
+        this.audioUS = audioUS;
+    }
+
+    public String getAudioUK() {
+        return audioUK;
+    }
+
+    public void setAudioUK(String audioUK) {
+        this.audioUK = audioUK;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public String getImageTopic() {
+        return imageTopic;
+    }
+
+    public void setImageTopic(String imageTopic) {
+        this.imageTopic = imageTopic;
+    }
+
+    @Override
+    public String toString() {
+        return "Toiec{" +
+                "englishtopic='" + englishtopic + '\'' +
+                ", vietnamTopic='" + vietnamTopic + '\'' +
+                ", imageTopic='" + imageTopic + '\'' +
+                ", vocabulary='" + vocabulary + '\'' +
+                ", transliterationUS='" + transliterationUS + '\'' +
+                ", transliterationUK='" + transliterationUK + '\'' +
+                ", englishMean='" + englishMean + '\'' +
+                ", vietnamMean='" + vietnamMean + '\'' +
+                ", fromCategory='" + fromCategory + '\'' +
+                ", englishExample='" + englishExample + '\'' +
+                ", vietnamExample='" + vietnamExample + '\'' +
+                ", audioUS='" + audioUS + '\'' +
+                ", audioUK='" + audioUK + '\'' +
+                ", img='" + img + '\'' +
+                '}';
     }
 }

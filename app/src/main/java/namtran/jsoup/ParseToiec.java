@@ -1,10 +1,7 @@
 package namtran.jsoup;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -13,21 +10,12 @@ import android.widget.TextView;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
-
-import jxl.Workbook;
-import jxl.WorkbookSettings;
-import jxl.write.Label;
-import jxl.write.WritableSheet;
-import jxl.write.WritableWorkbook;
-import jxl.write.WriteException;
-import jxl.write.biff.RowsExceededException;
 
 /**
  * Created by NamTran on 1/9/2017.
@@ -35,16 +23,20 @@ import jxl.write.biff.RowsExceededException;
 
 public class ParseToiec extends AppCompatActivity implements View.OnClickListener {
 
+    private static final String URL600 = "http://600tuvungtoeic.com/images/";
+
     TextView txtmeta;
     Button btnGetData,btnexel;
     List<Toiec> listToiec;
 
-    List<String> listURL = LuyenThiURL.listURLDangBaiDienTuVaoCau();
+    List<UrlToiec> listURL = ToiecURL.listURLToiec();
+    StringBuilder builder;
+    int paper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_parse_toiec);
 
         txtmeta = (TextView) findViewById(R.id.txtmeta);
         btnGetData = (Button) findViewById(R.id.btnGetData);
@@ -52,6 +44,7 @@ public class ParseToiec extends AppCompatActivity implements View.OnClickListene
         btnGetData.setOnClickListener(this);
         btnexel.setOnClickListener(this);
         listToiec = new ArrayList<>();
+        builder = new StringBuilder();
     }
 
     @Override
@@ -59,102 +52,25 @@ public class ParseToiec extends AppCompatActivity implements View.OnClickListene
         if (v.getId() == R.id.btnGetData){
             txtmeta.setText("" + listToiec.size());
             for (int i =0; i<listURL.size();i++){
-
+                new ParseToiecTask(i).execute(listURL.get(i));
             }
         }else if (v.getId() == R.id.btnexel){
-            txtmeta.setText("please wait");
-            xuatFileExelMonAnhVan("ToiecWord");
+
         }
     }
 
-    private void xuatFileExelMonAnhVan(String filename){
-        String Fnamexls = filename + ".xls";
-        File sdCard = Environment.getExternalStorageDirectory();
-        File directory = new File(sdCard.getAbsolutePath() + "/Download");
-        directory.mkdirs();
-        File file = new File(directory, Fnamexls);
-        WorkbookSettings wbSettings = new WorkbookSettings();
-        wbSettings.setLocale(new Locale("en", "EN"));
-        WritableWorkbook workbook;
-        try {
-            workbook = Workbook.createWorkbook(file, wbSettings);
 
-            try {
-                //Excel sheet name. 0 represents first sheet
-                WritableSheet sheet = workbook.createSheet("ListWordToiec", 0);
-                int arraySize = listToiec.size();
-                Label[][] headerArray = new Label[1][8];
-                Label[][] rowsArray = new Label[arraySize + 1][8];
-                headerArray[0][0] = new Label(0, 0, "Vocabulary");
-                headerArray[0][1] = new Label(1, 0, "Transliteration");
-                headerArray[0][2] = new Label(2, 0, "EnglishMean");
-                headerArray[0][3] = new Label(3, 0, "VietnamMean");
-                headerArray[0][4] = new Label(4, 0, "FromCategory");
-                headerArray[0][5] = new Label(5, 0, "EnglishExample");
-                headerArray[0][6] = new Label(6, 0, "VietnamExample");
-                headerArray[0][7] = new Label(7, 0, "Audio");
-                Toiec toiec = new Toiec();
-                for (int i = 0; i < arraySize; i++){
-                    if (i < arraySize) {
-                        toiec = listToiec.get(i);
-                    }
-                    int j = i + 1;
-                    rowsArray[j][0] = new Label(0, j,toiec.getVocabulary());
-                    rowsArray[j][1] = new Label(1, j,toiec.getTransliteration());
-                    rowsArray[j][2] = new Label(2, j,toiec.getEnglishMean());
-                    rowsArray[j][3] = new Label(3, j,toiec.getVietnamMean());
-                    rowsArray[j][4] = new Label(4, j,toiec.getFromCategory());
-                    rowsArray[j][5] = new Label(5, j,toiec.getEnglishExample());
-                    rowsArray[j][6] = new Label(6, j,toiec.getVietnamExample());
-                    rowsArray[j][7] = new Label(7, j,toiec.getAudio());
-                }
 
-                // Add header cells
-                for (int i = 0; i < 8; i++) {
-                    sheet.addCell(headerArray[0][i]);
-                }
-
-                // Add data cells
-                for (int i = 1; i <= arraySize; i++) {
-                    for (int j = 0; j < 8; j++) {
-                        sheet.addCell(rowsArray[i][j]);
-                    }
-                }
-
-                // create workbook
-                workbook.write();
-
-                try {
-                    workbook.close();
-                } catch (WriteException e) {
-                    e.printStackTrace();
-                }
-
-                // Open mail
-                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-                sharingIntent.setType("text/html");
-                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,
-                        "ListToiec");
-                if (file != null) {
-                    sharingIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file)); // attach
-                }
-                startActivity(Intent.createChooser(sharingIntent, "Share via"));
-                txtmeta.setText("OK");
-
-            } catch (RowsExceededException e) {
-                e.printStackTrace();
-            } catch (WriteException e) {
-                e.printStackTrace();
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    class ParseToiecTask extends AsyncTask<String, Void, Elements> {
+    class ParseToiecTask extends AsyncTask<UrlToiec, Void, List<Toiec>> {
 
         Document doc;
         Elements words;
+
+        int paper;
+
+        public ParseToiecTask(int paper) {
+            this.paper = paper;
+        }
 
         @Override
         protected void onPreExecute() {
@@ -162,21 +78,66 @@ public class ParseToiec extends AppCompatActivity implements View.OnClickListene
             txtmeta.setText("Please wait...");
         }
 
-        protected Elements doInBackground(String... params) {
-            String url = params[0];
+        protected List<Toiec> doInBackground(UrlToiec... params) {
+            List<Toiec> toiecs = new ArrayList<>();
+            String url = params[0].getUrl();
             try {
                 doc = Jsoup.connect(url).get();
                 words = doc.body().getElementsByClass("tuvung");
+                for (Element element : words){
+                    Toiec toiec = new Toiec();
+                    toiec.setEnglishtopic(params[0].getTitleEng());
+                    toiec.setVietnamTopic(params[0].getTitleVi());
+                    toiec.setImageTopic(params[0].getImageTitle());
+                    Document document = Jsoup.parse(element.html());
+                    String vocabulary = document.body().getElementsByClass("hinhanh").get(0).html().split("\" src=\"")[0].split("title=\"")[1];
+                    toiec.setVocabulary(vocabulary);
+                    Log.d("Paper","paper : " + paper + "\n" + "word :" + vocabulary);
+
+                    if (vocabulary.equals("da") || vocabulary.equals("adsa") || vocabulary.equals("dsadsad"))
+                        break;
+
+                    String image = builder.append(URL600).append(vocabulary.replaceAll(" ","_").toLowerCase()).toString();
+                    toiec.setImg(image);
+
+                    String noidung = document.body().getElementsByClass("noidung").html();
+                    String noidunggiaithich = noidung.split("<span class=\"bold\">Giải thích: </span>")[1];
+
+                    String giaithich = noidunggiaithich.split("<span class=\"bold\">Từ loại: </span>")[0];
+                    toiec.setEnglishMean(giaithich);
+
+                    String noidungtuloai = noidunggiaithich.split("<span class=\"bold\">Từ loại: </span>")[1];
+
+                    String tuloai = noidungtuloai.split("<span class=\"bold\">Ví dụ: </span>")[0];
+                    toiec.setVietnamMean(tuloai);
+
+                    String vidu = noidungtuloai.split("<span class=\"bold\">Ví dụ: </span>")[1].split("<audio controls>")[0];
+                    if (vidu.contains("<hr>")){
+                        toiec.setEnglishExample(vidu.split("<hr>")[0]);
+                        toiec.setVietnamExample(vidu.split("<hr>")[1]);
+                    }else if (vidu.contains("<b>")){
+                        toiec.setEnglishExample(vidu.split("<b>")[0]);
+                        toiec.setVietnamExample(vidu.split("<b>")[1]);
+                    }
+
+                    toiecs.add(toiec);
+                }
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
-            return words;
+            return toiecs;
         }
 
-        protected void onPostExecute(Elements result) {
+        protected void onPostExecute(List<Toiec> result) {
             super.onPostExecute(result);
-            Log.d("Word",result.toString());
+            if (result.size() > 0){
+                listToiec.addAll(result);
+                txtmeta.setText("" + listToiec.size());
+                for (Toiec toiec : result){
+                    Log.d("Toiec",toiec.toString());
+                }
+            }
         }
     }
 }
