@@ -15,22 +15,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:id="@+id/btnGetData"
                 android:layout_marginTop="20dp"
                 android:text="Jsoup"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:id="@+id/btnexel"
+                android:id="@+id/btnUpdateData"
                 android:layout_marginTop="20dp"
                 android:visibility="gone"
-                android:text="Parse"/>
+                android:text="Jsoup 2"/>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
