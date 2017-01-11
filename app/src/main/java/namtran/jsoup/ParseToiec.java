@@ -132,6 +132,8 @@ public class ParseToiec extends AppCompatActivity implements View.OnClickListene
                     String noidunggiaithich = noidung.split("<span class=\"bold\">Giải thích: </span>")[1];
 
                     String giaithich = noidunggiaithich.split("<span class=\"bold\">Từ loại: </span>")[0];
+                    if (giaithich.contains("<br>"))
+                        giaithich = giaithich.replace("<br>","");
                     toiec.setEnglishMean(giaithich);
 
                     String noidungtuloai = noidunggiaithich.split("<span class=\"bold\">Từ loại: </span>")[1];
@@ -141,68 +143,104 @@ public class ParseToiec extends AppCompatActivity implements View.OnClickListene
                     if (tuloai.contains("(adj):")){
                         String VietnamExample = tuloai.replace("(adj):","");
                         if (VietnamExample.contains("<br>"))
-                            VietnamExample.replace("<br>","");
+                           VietnamExample =  VietnamExample.replace("<br>","");
                         toiec.setVietnamMean(VietnamExample);
                         toiec.setFromCategory("(adj)");
                     }else if (tuloai.contains("(v):")){
                         String VietnamExample = tuloai.replace("(v):","");
                         if (VietnamExample.contains("<br>"))
-                            VietnamExample.replace("<br>","");
+                           VietnamExample =  VietnamExample.replace("<br>","");
                         toiec.setVietnamMean(VietnamExample);
                         toiec.setFromCategory("(v)");
                     }else if (tuloai.contains("(n):")){
                         String VietnamExample = tuloai.replace("(n):","");
                         if (VietnamExample.contains("<br>"))
-                            VietnamExample.replace("<br>","");
+                           VietnamExample =  VietnamExample.replace("<br>","");
                         toiec.setVietnamMean(VietnamExample);
                         toiec.setFromCategory("(n)");
                     }else if (tuloai.contains("(v, n):")){
                         String VietnamExample = tuloai.replace("(v, n):","");
                         if (VietnamExample.contains("<br>"))
-                            VietnamExample.replace("<br>","");
+                           VietnamExample =  VietnamExample.replace("<br>","");
                         toiec.setVietnamMean(VietnamExample);
                         toiec.setFromCategory("(v, n)");
                     }else if (tuloai.contains("(adv):")){
                         String VietnamExample = tuloai.replace("(adv):","");
                         if (VietnamExample.contains("<br>"))
-                            VietnamExample.replace("<br>","");
+                           VietnamExample =  VietnamExample.replace("<br>","");
                         toiec.setVietnamMean(VietnamExample);
                         toiec.setFromCategory("(adv)");
                     }else if (tuloai.contains("(adj, n):")){
                         String VietnamExample = tuloai.replace("(adj, n):","");
                         if (VietnamExample.contains("<br>"))
-                            VietnamExample.replace("<br>","");
+                           VietnamExample =  VietnamExample.replace("<br>","");
                         toiec.setVietnamMean(VietnamExample);
                         toiec.setFromCategory("(adj, n)");
                     }else if (tuloai.contains("(n,v):")){
                         String VietnamExample = tuloai.replace("(n,v):","");
                         if (VietnamExample.contains("<br>"))
-                            VietnamExample.replace("<br>","");
+                           VietnamExample =  VietnamExample.replace("<br>","");
                         toiec.setVietnamMean(VietnamExample);
                         toiec.setFromCategory("(n,v)");
                     }else if (tuloai.contains("(n, v):")){
                         String VietnamExample = tuloai.replace("(n, v):","");
                         if (VietnamExample.contains("<br>"))
-                            VietnamExample.replace("<br>","");
+                           VietnamExample =  VietnamExample.replace("<br>","");
                         toiec.setVietnamMean(VietnamExample);
                         toiec.setFromCategory("(n,v)");
                     }else if (tuloai.contains("(v,n):")){
-                        String VietnamExample = tuloai.replace("(v,n)","");
+                        String VietnamExample = tuloai.replace("(v,n):","");
                         if (VietnamExample.contains("<br>"))
-                            VietnamExample.replace("<br>","");
+                           VietnamExample =  VietnamExample.replace("<br>","");
                         toiec.setVietnamMean(VietnamExample);
                         toiec.setFromCategory("(n,v)");
+                    }else if (tuloai.contains("(n, v ):")){
+                        String VietnamExample = tuloai.replace("(n, v ):","");
+                        if (VietnamExample.contains("<br>"))
+                           VietnamExample =  VietnamExample.replace("<br>","");
+                        toiec.setVietnamMean(VietnamExample);
+                        toiec.setFromCategory("(n, v )");
+                    }else if (tuloai.contains("(adj, v):")){
+                        String VietnamExample = tuloai.replace("(adj, v):","");
+                        if (VietnamExample.contains("<br>"))
+                           VietnamExample =  VietnamExample.replace("<br>","");
+                        toiec.setVietnamMean(VietnamExample);
+                        toiec.setFromCategory("(adj, v)");
+                    }else if (tuloai.contains("(perp):")){
+                        String VietnamExample = tuloai.replace("(perp):","");
+                        if (VietnamExample.contains("<br>"))
+                           VietnamExample =  VietnamExample.replace("<br>","");
+                        toiec.setVietnamMean(VietnamExample);
+                        toiec.setFromCategory("(perp)");
+                    }else if (tuloai.contains("(to become wider):")){
+                        String VietnamExample = tuloai.replace("(to become wider):","");
+                        if (VietnamExample.contains("<br>"))
+                           VietnamExample =  VietnamExample.replace("<br>","");
+                        toiec.setVietnamMean(VietnamExample);
+                        toiec.setFromCategory("(to become wider)");
                     }else {
                         Log.d("No FromCATEGORY",tuloai);
                     }
 
                     String vidu = noidungtuloai.split("<span class=\"bold\">Ví dụ: </span>")[1].split("<audio controls>")[0];
                     if (vidu.contains("<hr>")) {
-                        toiec.setEnglishExample(vidu.split("<hr>")[0]);
-                        toiec.setVietnamExample(vidu.split("<hr>")[1]);
+                        String EngExample = vidu.split("<hr>")[0];
+                        if (EngExample.contains("<br>"))
+                            EngExample = EngExample.replace("<br>","");
+                        toiec.setEnglishExample(EngExample);
+                        String ViExample = vidu.split("<hr>")[1];
+                        if (ViExample.contains("<br>"))
+                            ViExample = ViExample.replace("<br>","");
+                        toiec.setVietnamExample(ViExample);
                     } else if (vidu.contains("<b>")) {
-                        toiec.setEnglishExample(vidu.split("<b>")[0]);
-                        toiec.setVietnamExample(vidu.split("<b>")[1]);
+                        String EngExample = vidu.split("<b>")[0];
+                        if (EngExample.contains("<br>"))
+                            EngExample = EngExample.replace("<br>","");
+                        toiec.setEnglishExample(EngExample);
+                        String ViExample = vidu.split("<b>")[1];
+                        if (ViExample.contains("<br>"))
+                            ViExample = ViExample.replace("<br>","");
+                        toiec.setVietnamExample(ViExample);
                     }
                     toiecs.add(toiec);
                 }
@@ -261,8 +299,6 @@ public class ParseToiec extends AppCompatActivity implements View.OnClickListene
         protected void onPostExecute(Toiec toiec) {
             super.onPostExecute(toiec);
             txtmeta.setText("" + (word + 1));
-            if (toiec != null)
-                listToiec2.add(toiec);
             if (word == listToiec.size() - 1) {
                 for (Toiec toiec1 : listToiec)
                     Log.d("Toiec Cambridge", toiec1.toString());
