@@ -126,7 +126,7 @@ public class ParseToiec extends AppCompatActivity implements View.OnClickListene
             }
         }else if (v.getId() == R.id.btnJsonArray) {
             if (listToiec.size() > 0) {
-                String json = new Gson().toJson(listToiec);
+
                 final Dialog dialog = new Dialog(ParseToiec.this);
                 dialog.setContentView(R.layout.dialog_choose_list);
                 dialog.setTitle("Choose List");
@@ -139,7 +139,7 @@ public class ParseToiec extends AppCompatActivity implements View.OnClickListene
                 btnGallery.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
+                        String json = new Gson().toJson(listToiec);
                         dialog.dismiss();
                         btnJsonArray.setEnabled(false);
                     }
@@ -147,7 +147,7 @@ public class ParseToiec extends AppCompatActivity implements View.OnClickListene
                 btnCamera.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
+                        String json = new Gson().toJson(listToiecAll);
                         dialog.dismiss();
                         btnJsonArray.setEnabled(false);
                     }
@@ -167,7 +167,7 @@ public class ParseToiec extends AppCompatActivity implements View.OnClickListene
                 btnGallery.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
+                        xuatFileExelMonAnhVan("ListToiec" + countURL + "URL",listToiec);
                         dialog.dismiss();
                         btnExel.setEnabled(false);
                     }
@@ -175,7 +175,7 @@ public class ParseToiec extends AppCompatActivity implements View.OnClickListene
                 btnCamera.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
+                        xuatFileExelMonAnhVan("listToiecAll" + listToiecAll.size(),listToiecAll);
                         dialog.dismiss();
                         btnExel.setEnabled(false);
                     }
